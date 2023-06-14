@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 14-Responsive</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <p class="anuncio-descuento">Descuentos 20%</p>
+    <header>
+        <a href="./index.html">
+            <div class="logo-box">
+                <img src="img/logo1.svg" alt="tienda electronica">
+                <h1>Heroes</h1>
+            </div>
+        </a>
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a class="navlink" href="./nuevo-heroe.html"><span class="agregar-heroe" title="Agregar héroe">
+                            +
+                        </span></a></li>
+                <li><a class="navlink" href="#">Contacto</a></li>
+                <li><a class="navlink" href="#">Registrarme</a></li>
+                <li><a class="navlink" href="#"></a>Ingresar</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="nh-container">
+            <h1 class="f-inter">Añadí tu super!</h1>
+            <p class="f-inter">Agregá tu personaje favorito completando las opciones.</p>
+            <form class="nh-form" action="./nuevo-heroe.html" method="post">
+                <div class="nh-form-field-box">
+                <fieldset class="nh-f-half nh-f-half-left">
+                    <label class="f-label" for="name">Nombre (obligatorio)</label>
+                    <input class="f-inter input-text" id="name" name="name" type="text" required>
+                    <label class="f-label" for="date">Fecha</label>
+                    <input class="f-inter input-date" id="date" name="date" type="date">
+                    <textarea class="input-textarea f-inter" name="descripcion" id="descripcion" placeholder="Descripción"
+                        cols="30" rows="10"></textarea>
+                </fieldset>
+                <fieldset class="nh-f-half nh-f-half-right">
+                    <label class="f-label" for="especie">Especie (obligatorio)</label>
+                    <select class="input-text option-placeholder" name="especie" id="especie" required>
+                        <option value="" disabled selected>Especie</option>
+                        <option class="option-valid" value="Ángeles">Ángeles</option>'
+                        <option class="option-valid" value="Amazonas">Amazonas</option>'
+                        <option class="option-valid" value="Atlantes">Atlantes</option>'
+                        <option class="option-valid" value="Caballos">Caballos</option>'
+                        <option class="option-valid" value="Coluanos">Coluanos</option>'
+                        <option class="option-valid" value="Czarnianos">Czarnianos</option>'
+                        <option class="option-valid" value="Demonios">Demonios</option>'
+                        <option class="option-valid" value="Dioses">Dioses</option>'
+                        <option class="option-valid" value="Durlanos">Durlanos</option>'
+                        <option class="option-valid" value="Fantasmas">Fantasmas</option>'
+                        <option class="option-valid" value="Gorgonas">Gorgonas</option>'
+                        <option class="option-valid" value="Gorilas">Gorilas</option>'
+                        <option class="option-valid" value="Humanos">Humanos</option>'
+                        <option class="option-valid" value="Kryptonianos">Kryptonianos</option>'
+                        <option class="option-valid" value="La Zanja">La Zanja</option>'
+                        <option class="option-valid" value="Licántropos">Licántropos</option>'
+                        <option class="option-valid" value="Marcianos">Marcianos</option>'
+                        <option class="option-valid" value="Nuevos Dioses">Nuevos Dioses</option>'
+                        <option class="option-valid" value="Olímpicos">Olímpicos</option>'
+                        <option class="option-valid" value="Parademonios">Parademonios</option>'
+                        <option class="option-valid" value="Pegasos">Pegasos</option>'
+                        <option class="option-valid" value="Perros">Perros</option>'
+                        <option class="option-valid" value="Robots">Robots</option>'
+                        <option class="option-valid" value="Tamaranianos">Tamaranianos</option>'
+                        <option class="option-valid" value="Ungaranianos">Ungaranianos</option>'
+                        <option class="option-valid" value="Unknown">Unknown</option>'
+                        <option class="option-valid" value="Vampiros">Vampiros</option>'
+                    </select>
+                    <label class="f-label" for="img-heroe">Agregar Foto</label>
+                    <input class="input-file-heroe" type="file" id="img-heroe" accept="image/png, image/jpeg"
+                        caption="no ar">
+                    <fieldset class="radio-checkbox-fieldset">
+                        <label class="f-label">Poderes</label>
+                        <label for="volar" class="checkbox-label">
+                            <input type="checkbox" id="volar" name="poderes" value="Volar">
+                            Volar
+                        </label>
+                        <label for="supinteligencia" class="checkbox-label">
+                            <input type="checkbox" id="supinteligencia" name="poderes" value="SuperInteligencia">
+                            SuperInteligencia
+                        </label>
+                        <label for="rlaser" class="checkbox-label">
+                            <input type="checkbox" id="rlaser" name="poderes" value="Vista de rayo láser">
+                            Vista de rayo láser
+                        </label>
+                        <label for="bilgorda" class="checkbox-label">
+                            <input type="checkbox" id="bilgorda" name="poderes" value="Billetera gorda">
+                            Billetera gorda
+                        </label>
+                        <hr>
+                        <label class="f-label">Tipo de personaje</label>
+                        <label for="heroe" class="checkbox-label">
+                            <input type="radio" id="heroe" name="tipo-personaje" value="Héroe / Heroina">
+                            Héroe / Heroina
+                        </label>
+                        <label for="villano" class="checkbox-label">
+                            <input type="radio" id="villano" name="tipo-personaje" value="Villano / Villana">
+                            Villano / Villana
+                        </label>
+                    </fieldset>
+                </fieldset>
+            </div>
+                <div class="nh-form-btn-box f-inter">
+                    <button type="submit" class="btn-agregar">
+                        Añadir
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span></span>
+        <p>
+            <span class="copyright">&copy;</span> Todos los derechos reservados a FRONT END 1
+        </p>
+        <img class="img-github" src="img/github.png" alt="logo github">
+    </footer>
+
+    <script type="text/javascript">
+        var boton = document.querySelectorAll('#img-heroe');
+        console.log(boton);
+    </script>
+</body>
+
+</html>

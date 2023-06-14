@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "nuevo-heroe.css";
+
+:root {
+    --bg-batman: url('../img/fondo-batman1.png');
+    --bg-wonderwoman: url('../img/fondo-wonderwoman.png');
+    --bg-superman: url('../img/fondo-superman.png');
+    --bg-harley: url('../img/fondo-harley.png');
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.anuncio-descuento {
+    background-color: #1CD1B0;
+    font-size: 15px;
+    min-width: 330px;
+    height: 38px;
+    padding: 11px 2.25%;
+}
+
+header {
+    background-color: #00669F;
+    box-shadow: 0px 5px 5px #C0C0C0;
+    color: white !important;
+    height: 101px;
+    margin-bottom: 100px;
+    min-width: 330px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+
+    font-style: none;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.menu-navegacion{
+    align-items: center;
+    background-color: #001D2D;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.menu-navegacion ul{
+    display: flex;
+    gap: 20px;
+
+}
+.menu-navegacion li{
+    display: inline-block;
+}
+
+.navlink{
+    font-size: 16px;
+    
+}
+
+.agregar-heroe{
+    background-color: #00669F;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 2px 8px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.checkbox-show {
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+
+.card {
+    background-color: #F3F3F3;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0px 5px 5px #C0C0C0;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    margin: 0 12.6px;
+    margin-bottom: 88px;
+    min-width: 302.01px;
+    position: relative;
+    text-align: center;
+    width: 302.01px;
+
+}
+
+.fondo-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 36.8%; */
+    min-height: 195px;
+    padding: 21px;
+    text-align: left;
+}
+
+.fondo-card1 {
+    background-image: var(--bg-batman);
+}
+
+.fondo-card2 {
+    background-image: var(--bg-wonderwoman);
+}
+
+.fondo-card3 {
+    background-image: var(--bg-superman);
+}
+
+.fondo-card4 {
+    background-image: var(--bg-harley);
+}
+
+.img-heroe {
+    align-self: center;
+    border-radius: 60px;
+    bottom: 60px;
+    height: 120px;
+    position: relative;
+    width: 120px;
+}
+
+.card h3 {
+    bottom: 47px;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+}
+
+.card p {
+    bottom: 45px;
+    padding: 16px;
+    position: relative;
+    text-align: left;
+}
+
+.boton-card {
+    align-self: center;
+    background-color: #00669F;
+    bottom: 30px;
+    height: 50px;
+    padding: 15px;
+    position: absolute;
+    width: 129px;
+}
+
+.boton-card a {
+    color: #F3F3F3;
+    text-decoration: none;
+}
+
+.ellipse {
+    align-self: flex-end;
+    display: none;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 660px;
+    transition: 0.5s ease-in-out;
+    transform: rotate(-0deg);
+}
+
+.ellipse span {
+    background-color: #00669F;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 2.5em;
+    height: 150px;
+    padding: 10px 23px;
+    width: 150px;
+}
+
+.ellipse span:hover, .agregar-heroe:hover{
+    background-color: #023654;
+}
+
+.ellipse span:active, .agregar-heroe:active {
+    background: radial-gradient(circle, rgba(2,54,84,0.0760679271708683) 0%, rgba(2,54,84,0.5634628851540616) 35%, rgba(2,54,84,0.7959558823529411) 60%, rgba(2,54,84,1) 86%);
+}
+
+footer {
+    align-items: center;
+    background-color: #00669F;
+    color: #FFF9F9;
+    display: flex;
+    font-size: 16px;
+    height: 50px;
+    justify-content: space-between;
+    margin-top: 100px;
+    min-width: 330px;
+    padding: 50px 10px;
+    position: relative;
+    text-align: center;
+}
+
+.img-github {
+    bottom: 33px;
+    height: 30px;
+    right: 35px;
+    width: 110.5px;
+    margin: 0 20px 0 20px;
+}
+
+@keyframes fadeOut {
+    50%  { opacity:0.5; scale: 0;}
+    75%  { opacity: 0;  scale: 0; display: none;  }
+    100% { opacity: 0;  scale: 0; height: 0; display: none; position: absolute; bottom: 1000px;}
+  }
+
+@keyframes fadeIn {
+    0%   { opacity: 0.5; scale: 0; height: 0;}
+    100% { opacity: 1;   scale: 1; height: 630px;}
+  }
+
+@media screen and (max-width: 1325px) {
+
+    main {
+        justify-content: space-around;
+    }
+
+    .ellipse1 {
+        display: initial;
+    }
+
+    .card4 {
+        animation: fadeOut 2s;
+        animation-fill-mode: forwards;
+       
+    }
+    
+    main input:checked~.card4 {
+        animation: fadeIn 2s;
+        animation-fill-mode: forwards;
+        
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 998px) {
+
+    header {
+        margin-bottom: 47px;
+    }
+
+    .card3 {
+        animation: fadeOut 2s;
+        animation-fill-mode: forwards;
+    }
+
+    main input:checked~.card3 {
+        animation: fadeIn 2s;
+        animation-fill-mode: forwards;
+    }
+    
+
+}
+
+@media screen and (max-width: 673px) {
+
+    .card2 {
+        animation: fadeOut 2s;
+        animation-fill-mode: forwards;
+    }
+
+    main input:checked~.card2 {
+        animation: fadeIn 2s;
+        animation-fill-mode: forwards;
+    }
+
+}
+
+main input:checked~.ellipse {
+    transform: rotate(-405deg);
+    transition: 2s ease-in-out;
+
+}

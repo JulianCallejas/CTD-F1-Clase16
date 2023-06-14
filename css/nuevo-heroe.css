@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Karla&display=swap');
+
+:root {
+    --font-inter: 'Inter', sans-serif;
+    --font-Karla: 'Karla', sans-serif; 
+}
+
+.f-inter{
+    font-family: var(--font-inter);
+}
+
+.f-karla{
+    font-family: var(--font-Karla); 
+}
+
+
+.nh-container{
+    max-width: 954px;
+    align-content: flex-start;
+    border-radius: 6%;
+    background-color: #00669F;
+    box-shadow: 0px 5px 5px #C0C0C0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 10px;
+    min-width: 330px;
+    padding: 10px;
+
+}
+
+.nh-container h1{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.nh-container p{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.nh-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nh-form-field-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    width: 100%;
+    gap: 2%;
+}
+
+.nh-f-half{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    border: none;
+
+}
+.nh-f-half-left{
+    padding-left: 10%;
+
+}
+
+.nh-f-half-right{
+    padding-right: 10%;
+
+}
+
+.f-label{
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.input-text{
+    border: solid 1.53px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+
+}
+
+.input-date{
+    border: solid 1.53px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 27px 10px;
+    margin-bottom: 20px;
+}
+
+.input-textarea{
+    border: solid 1.53px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 300;
+    height: 300px;
+    padding: 10px 10px;
+    resize: none;
+}
+
+.option-placeholder{
+    color: rgba(0, 0, 0, 1);
+}
+
+.option-placeholder:invalid{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.option-valid{
+    color: black !important;
+}
+
+.input-file-heroe{
+    color: #000000;
+    font-size: 10px;
+
+}
+
+
+.input-file-heroe::file-selector-button{
+    background-color: #CECECE;
+    border: solid 1.53px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-family: var(--font-inter);
+    font-size: 13px;
+    font-weight: 300;
+    height: 32px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    text-align: left;
+    width: 223px;
+}
+
+/* .input-file-heroe:empty{
+    color: rgba(0, 0, 0, 0);
+    
+} 
+ .input-file-heroe::after{
+    color: #000000;
+    content: "No se eligió archivo";
+    font-family: var(--font-inter);
+    font-size: 10px;
+    font-weight: 300;
+    position: absolute;
+    
+} */
+
+.radio-checkbox-fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+    
+}
+
+.checkbox-label{
+    display: flex;
+    font-family: var(--font-Karla);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.checkbox-label input[type="checkbox"]{
+    width: 24px;
+    height: 20px;
+    margin-right: 3%;
+}
+
+.radio-checkbox-fieldset hr{
+    margin: 15px 0 25px;
+    border: 0.5px 0 0 0 solid ;
+}
+
+.checkbox-label input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 3%;
+}
+
+.nh-form-btn-box{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 10px;
+    width: 100%;
+
+}
+
+.btn-agregar{
+    background-color: #1CD1B0;
+    border: none;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    height: 87px;
+    width: 40%;
+
+}
+
+.btn-agregar:hover{
+    background-color: #001D2D;
+    color: #FFFFFF;
+
+}
+
+.btn-agregar:active{
+    background-color: #0F9A9E;
+    color: #000000;
+    
+}
