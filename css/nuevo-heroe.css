@@ -17,7 +17,7 @@
 .nh-container{
     max-width: 954px;
     align-content: flex-start;
-    border-radius: 6%;
+    border-radius: 10%;
     background-color: #00669F;
     box-shadow: 0px 5px 5px #C0C0C0;
     display: flex;
@@ -230,6 +230,10 @@
 }
 
 @media screen and (max-width: 750px) {
+    .nh-container{
+        border-radius: 40px;
+    }
+
     .nh-f-half{
         width: 80%;
 

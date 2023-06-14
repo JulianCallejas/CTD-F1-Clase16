@@ -78,7 +78,7 @@
                     </select>
                     <label class="f-label" for="img-heroe">Agregar Foto</label>
                     <input class="input-file-heroe" type="file" id="img-heroe" accept="image/png, image/jpeg"
-                        caption="no ar">
+                        caption="no ar" data-multiple-caption="{count} archivos seleccionados" multiple>
                     <fieldset class="radio-checkbox-fieldset">
                         <label class="f-label">Poderes</label>
                         <label for="volar" class="checkbox-label">
@@ -125,11 +125,6 @@
         </p>
         <img class="img-github" src="img/github.png" alt="logo github">
     </footer>
-
-    <script type="text/javascript">
-        var boton = document.querySelectorAll('#img-heroe');
-        console.log(boton);
-    </script>
 </body>
 
 </html>
