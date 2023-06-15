@@ -192,7 +192,7 @@
     margin-right: 3%;
 }
 
-.checkbox-label input[type="checkbox"]:checked,
+.checkbox-label input[type="checkbox"]:checked ~ .checkmark,
 .checkbox-label input[type="radio"]:checked
  {
     background-color: #34CEFF;
