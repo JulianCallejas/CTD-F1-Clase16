@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <p class="anuncio-descuento">Descuentos 20%</p>
+    <p class="anuncio-descuento">20% de descuento en todos los productos!</p>
     <header>
         <a href="./index.html">
             <div class="logo-box">
@@ -21,8 +21,8 @@
         </a>
         <nav class="menu-navegacion">
             <ul>
-                <li><a class="navlink" href="./nuevo-heroe.html"><span class="agregar-heroe" title="Agregar héroe">
-                            +
+                <li><a class="navlink" href="./index.html"><span class="agregar-heroe" title="Regresar">
+                            <
                         </span></a></li>
                 <li><a class="navlink" href="#">Contacto</a></li>
                 <li><a class="navlink" href="#">Registrarme</a></li>
@@ -38,7 +38,7 @@
                 <div class="nh-form-field-box">
                 <fieldset class="nh-f-half nh-f-half-left">
                     <label class="f-label" for="name">Nombre (obligatorio)</label>
-                    <input class="f-inter input-text" id="name" name="name" type="text" required>
+                    <input class="f-inter input-text" id="name" name="name" type="text" required oninvalid="setCustomValidity('Debes incluir el nombre del personaje')">
                     <label class="f-label" for="date">Fecha</label>
                     <input class="f-inter input-date" id="date" name="date" type="date">
                     <textarea class="input-textarea f-inter" name="descripcion" id="descripcion" placeholder="Descripción"
